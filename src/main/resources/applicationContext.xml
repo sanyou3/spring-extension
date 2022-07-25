@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:sanyou="http://sanyou.com/schema/sanyou"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://sanyou.com/schema/sanyou
+       http://sanyou.com/schema/sanyou.xsd
+       ">
+
+    <!--使用 sanyou 标签，配置一个 User Bean-->
+    <sanyou:mybean class="com.sanyou.spring.extension.User"/>
+
+</beans>

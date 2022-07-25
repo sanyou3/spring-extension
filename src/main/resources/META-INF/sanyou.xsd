@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- xmlns 和 targetNamespace 需要定义，结尾为sanyou，前面都一样的-->
+<xsd:schema xmlns="http://sanyou.com/schema/sanyou"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://sanyou.com/schema/sanyou">
+
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+
+    <xsd:complexType name="Bean">
+        <xsd:attribute name="class" type="xsd:string" use="required"/>
+    </xsd:complexType>
+
+    <!--  sanyou 便签的子标签，类型是Bean ，就会找到上面的complexType=Bean类型，然后处理属性  -->
+    <xsd:element name="mybean" type="Bean"/>
+
+</xsd:schema>

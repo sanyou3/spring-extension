@@ -1,0 +1,7 @@
+com.sanyou.spring.extension.spi.MyEnableAutoConfiguration=com.sanyou.spring.extension.User
+
+#org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+#com.sanyou.spring.extension.springbootextension.UserAutoConfiguration
+
+org.springframework.boot.env.PropertySourceLoader=\
+com.sanyou.spring.extension.springbootextension.propertysourceloader.JsonPropertySourceLoader
